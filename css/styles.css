@@ -114,17 +114,33 @@ a {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
         ), 
-        url("../images/mobile/m-hero/office.jpg");
+        url("../images/mobile/m-hero/office.jpg");    
         background-size: cover;
     background-color: #2E2F42;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 188px;
+    padding-top: 77px;
     padding-bottom: 188px;
     max-width: 320px;
     max-height: 432px;
     margin: 0 auto;
 }
+
+@media (min-resolution: 192dpi) {
+    .section-first {
+        background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ), 
+        url("../images/mobile/m-hero/office@2x.jpg");
+    }
+
+    .div-title {
+        gap: 36px;
+    }
+}
+
 
 .page-title {
     display: flex;
@@ -170,18 +186,142 @@ a {
     background: #404BBF;
 }
 
+/* -------------- M-SECTION 2 ---------------------- */
+.section-second-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.section-second-list-icon {
+    display: none;
+}
+
+.card-title {
+    align-self: stretch;
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.card-text {
+    align-self: stretch;
+    color: #434455;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.50;
+    letter-spacing: 0.02em;
+}
+
+
+
 /* ====================== TABLET =========================== */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+
+    /*------------ section 1 ----------------  */
+    .section-first {
+        min-width: 768px;
+        min-height: 420px;
+        padding-top: 112px;
+        background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ), 
+        url("../images/tablet/t-hero/office.jpg");
+    }
+
+    @media (min-resolution: 192dpi) {
+        .section-first {
+            background-image: linear-gradient(
+            to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+            ), 
+            url("../images/tablet/t-hero/office@2x.jpg");
+        }
+    }
+        
     .container {
-        max-width: 768px;
+        min-width: 768px;
+    }
+
+    .page-title {
+        min-width: 496px;
+        min-height: 120px;
+        padding: 0;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+    }
+
+    /* ---------------- section 2 --------------- */
+
+    .section-second-list-icon {
+        display: block;
     }
 }
 
 /* ======================= DESKTOP ========================= */
 
 @media screen and (min-width: 1158px) {
+
+    /* ------------------ SECTION 1 ----------------- */
+    .section-first {
+        min-width: 1158px;
+        min-height: 600px;
+        padding-top: 112px;
+        background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ), 
+        url("../images/desktop/d-hero/office.jpg");
+    }
+
+    @media (min-resolution: 192dpi) {
+        .section-first {
+            background-image: linear-gradient(
+            to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+            ), 
+            url("../images/desktop/d-hero/office@2x.jpg");
+        }
+    }    
+
     .container {
-        max-width: 1158px;
+        min-width: 1158px;
+    }
+
+    /* ----------------- SECTION 2 ---------------- */
+    .section-second-list-icon {
+        display: block;
+    }
+
+    .section-second-list {
+        display: flex;
+        gap: 24px;
+    }
+    
+    .section-second-list-el {
+        width: calc((100% - 72px) / 4);
+    
+    }
+    
+    .section-second-list-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 112px;
+        background-color: #F4F4FD;
+        border-radius: 4px;
+        margin-bottom: 8px;
     }
 }
+    
