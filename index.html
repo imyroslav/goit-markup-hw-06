@@ -47,9 +47,9 @@
                 <svg class="mobile-menu-open-btn-icon" width="24" height="24" aria-label="mobile menu open icon">
                     <use href="./images/icons.svg#icon-burger"></use>
                 </svg>
-
             </button>
-             <address class="address" id="contacts">
+
+            <address class="address" id="contacts">
                 <ul class="address-list">
                     <li>
                         <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -58,9 +58,83 @@
                         <a class="address-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
                     </li>
                 </ul>            
-             </address>  
-         </div>
-        </header>
+            </address>  
+        </div>
+
+        <!------ Mobile menu ----------- -->
+        <div class="mobile-menu is-active">
+            <div class="mobile-menu-window">
+                <button  class="mobile-menu-window-close-btn" type="button"> 
+                    <svg
+                    class="mobile-menu-window-close-button-icon" 
+                    width="8"
+                    height="8"
+                    aria-label="close Mobile icon"
+                    >
+                        <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-nav-list">
+                    <li>
+                        <a class="mobile-nav-link-studio" href="./index.html">
+                            Studio
+                        </a>
+                    </li>  
+                    <li>
+                        <a class="mobile-nav-link" href="">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a class="mobile-nav-link" href="">
+                            Contacts
+                        </a>
+                    </li>
+                </ul>
+                <address class="mobile-menu-address" id="contacts">
+                    <ul class="mobile-menu-address-list">
+                        <li>
+                            <a class="mobile-menu-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu-address-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                    </ul>            
+                </address>  
+                <ul class="mobile-soc-media-list">
+                    <li class="mobile-soc-media-list-el">
+                        <a href="" class="mobile-soc-media-link">
+                            <svg class="mobile-soc-media-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-soc-media-list-el">
+                        <a href="" class="mobile-soc-media-link">
+                            <svg class="mobile-soc-media-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-soc-media-list-el"> 
+                        <a href="" class="mobile-soc-media-link">
+                            <svg class="mobile-soc-media-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-soc-media-list-el">
+                        <a href="" class="mobile-soc-media-link">
+                            <svg class="mobile-soc-media-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
 
     <main>
         <!-- Section-1 Introduction -->
@@ -641,7 +715,7 @@
 
     <!-- =========================BACKDROP================================== -->
 
-    <div class="backdrop is-open">
+    <div class="backdrop isopen">
         <div class="modal-window">
             <button  class="modal-window-close-btn" type="button"> 
                 <svg
