@@ -1,5 +1,5 @@
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     color: #434455;
     background-color: #FFFFFF;
     font-size: 16px;
@@ -69,6 +69,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .nav-list, .address {
@@ -127,7 +129,6 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 320px;
-    height: 640px;
     border-radius: 4px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -268,7 +269,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 48px;
+    gap: 72px;
 }
 
 .section-first {
@@ -282,10 +283,10 @@ a {
     background-color: #2E2F42;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 77px;
-    padding-bottom: 188px;
+    padding-top: 72px;
+    padding-bottom: 72px;
     max-width: 320px;
-    max-height: 432px;
+    /* max-height: 432px; */
     margin: 0 auto;
 }
 
@@ -299,9 +300,6 @@ a {
         url("../images/mobile/m-hero/office@2x.jpg");
     }
 
-    .div-title {
-        gap: 36px;
-    }
 }
 
 
@@ -311,7 +309,6 @@ a {
     justify-content: center;
     text-wrap: wrap;
     width: 288px;
-    height: 160px;
     padding: 0 44px;
     flex-shrink: 0;
     color: #FFF;
@@ -350,10 +347,20 @@ a {
 }
 
 /* -------------- M-SECTION 2 ---------------------- */
+.section-second {
+    margin: 96px auto;
+}
+
 .section-second-list {
     display: flex;
     flex-direction: column;
     gap: 72px;
+}
+
+.section-second-list-el {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .section-second-list-icon {
@@ -401,12 +408,12 @@ a {
 .section-third-list {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 72px;
 }
 
 .section-third-list-el {
     background-color: #FFFFFF;
-    min-width: 264px;
+    width: 264px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
                 0px 1px 1px rgba(46, 47, 66, 0.16), 
@@ -478,7 +485,7 @@ a {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.11px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
@@ -487,11 +494,11 @@ a {
 .section-fourth-list {
     display: flex;
     flex-direction: column;
-    column-gap: 32px;
+    gap: 48px;
 } 
 
 .section-fourth-list-el {
-    max-width: 288px;
+    width: 288px;
 }
 
 .portfolio-card {
@@ -546,11 +553,8 @@ a {
     background-color: #2E2F42;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 77px;
-    padding-bottom: 188px;
-    max-width: 320px;
-    max-height: 664px;
-    margin: 0 auto;
+    padding: 96px 0;
+    
 }
 
 .footer-container {
@@ -558,13 +562,12 @@ a {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    gap: 72px;
 }
 
 .footer-container-lote {
     width: 288px;
-    height: 72px;
     align-items: center;
-    margin-bottom: 72px;
 }
 
 .footer-container-sm-p {
@@ -573,8 +576,6 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    padding-left: 96px;
-    padding-right: 96px;
     margin-bottom: 16px;
 }
 
@@ -614,7 +615,6 @@ a {
     font-size: 16px;
     letter-spacing: 0.02em;
     max-width: 264px;
-    margin-bottom: 72px;
 }
 
 .logo-footer {
@@ -922,7 +922,7 @@ a {
     /* ---------------- T-HEADER ---------------- */
 
     .container {
-        max-width: 768px;
+        min-width: 768px;
     }
 
     .mobile-menu {
@@ -1051,14 +1051,9 @@ a {
             url("../images/tablet/t-hero/office@2x.jpg");
         }
     }
-        
-    .container {
-        min-width: 768px;
-    }
 
     .page-title {
         min-width: 496px;
-        min-height: 120px;
         padding: 0;
         font-size: 56px;
         line-height: 1.07;
@@ -1071,11 +1066,11 @@ a {
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 72px 24px;
     }
 
     .section-second-list-el {
-        width: 326px;
+        width: calc((100% - 24px) / 2);
         height: 120px;
     }
 
@@ -1094,7 +1089,8 @@ a {
     .section-third-list {
         flex-direction: row;
         flex-wrap: wrap;
-        padding-left: 108px;
+        justify-content: center;
+        gap: 64px 24px;
     }
 
 
@@ -1113,8 +1109,6 @@ a {
         justify-content: center;
         column-gap: 24px;
         row-gap: 64px;
-        max-width: 768px;
-    
     }
     
 
@@ -1122,27 +1116,24 @@ a {
         width: calc((100% - 24px) / 2);
     }
 
-    /* ----------------------- T-FOOTER ---------------------- */
-
-    .footer {
-        background-color: #2E2F42;
-        padding: 96px 84px;
-        min-width: 768px;
-        max-height: 436px;
-    }
+    /* ----------------------- T-FOOTER ---------------------*/
 
     .footer-container {
-        max-width: 768px;
+        min-width: 584px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: start;
-        gap: 24px;
+        justify-content: center;
+        gap: 72px 24px;
     }
 
     .footer-container-lote {
         width: 264px;
-        margin-bottom: 72px;
+        margin-bottom: 0px;
+    }
+
+    .footer-container-sm {
+        width: 208px;
     }
 
     .footer-container-sm-p {
@@ -1157,6 +1148,7 @@ a {
     .footer-container-sm-li {
         display: flex;
         gap: 16px;
+        margin: 0;
     }
 
     .footer-container-sm-liel {
@@ -1186,7 +1178,7 @@ a {
     .footer-text {
         color: #F4F4FD;
         letter-spacing: 0.02em;
-        max-width: 264px;
+        margin: 0;
     }
 
     .logo-footer {
@@ -1464,6 +1456,7 @@ a {
         font-weight: 500;
         line-height: 1.20;
         letter-spacing: 0.02em;
+        text-align: start;
     }
 
     .card-text {
@@ -1492,7 +1485,6 @@ a {
         display: flex;
         flex-direction: row;
         gap: 24px;
-        width: calc((100% - 72px) / 4);
     }
 
     .section-third-list-el {
@@ -1540,8 +1532,6 @@ a {
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 48px;
-        padding-left: 156px;
-        padding-right: 156px;
     }
 
     .section-fourth-list-el {
@@ -1608,20 +1598,18 @@ a {
     .footer-container {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: start;
+        justify-content: space-between;
+        /* align-items: flex-start;
         width: 1128px;
-        height: 142px;
+        height: 142px; */
     }
     
     .footer-container-lote {
         width: 264px;
-        margin-right: 120px;
     }
     
     .footer-container-sm {
         width: 208px;
-        margin-right: 80px;
     }
     
     .footer-container-sm-p {
@@ -1666,7 +1654,7 @@ a {
     .footer-text {
         color: #F4F4FD;
         letter-spacing: 0.02em;
-        max-width: 264px;
+        width: 264px;
     }
     
     .logo-footer {
